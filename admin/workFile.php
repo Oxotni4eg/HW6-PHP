@@ -1,4 +1,9 @@
 <?php
+
+if (!isset($_COOKIE['Autorization'])) {
+    header('Location: ./index.php');
+}
+
 session_start();
 $workFile = $_POST['workFile'];
 $_SESSION['workFile'] = $workFile;
@@ -25,7 +30,7 @@ if ((!empty($_POST['workFile'])) && (is_file($workFile) == true)) { ?>
             <fieldset>
                 <legend>Редактирование файла</legend>
                 <textarea name="message" cols="100" rows="50"><?php echo file_get_contents($workFile); ?></textarea>
-                <a class="returnFileManager" href="./index.php">Закрыть</a>
+                <a class="returnFileManager" href="./explorer.php">Закрыть</a>
                 <input class="inputSubmit" type="submit" value="Сохранить" />
             </fieldset>
         </form>

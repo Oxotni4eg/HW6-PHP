@@ -1,4 +1,7 @@
-
+<?php if (!isset($_COOKIE['Autorization'])) {
+header('Location: ./index.php');
+};
+?>
 
 <div style="text-align: center">
     <h1>Вы ввели неверные(пустые) данные!</h1>
@@ -6,5 +9,5 @@
 </div>
 
 <?php
-header('Refresh: 5; url=/admin/');
+header('Refresh: 5; url=/admin/explorer.php');
 ?>

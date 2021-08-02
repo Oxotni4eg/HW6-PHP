@@ -3,6 +3,10 @@
 print_r($_FILES);
 echo '</pre>';*/
 
+if (!isset($_COOKIE['Autorization'])) {
+    header('Location: ./index.php');
+}
+
 $destPath = './uploads';
 if (!file_exists($destPath)) {
     mkdir($destPath);
@@ -34,4 +38,4 @@ foreach ($_FILES['files']['tmp_name'] as $index => $path) {
     }
 }
 
-header('Location: ./');
+header('Location: ./explorer.php');

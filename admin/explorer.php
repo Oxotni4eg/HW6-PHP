@@ -1,5 +1,9 @@
 <?php
 
+if (!isset($_COOKIE['Autorization'])) {
+    header('Location: ./index.php');
+}
+
 $startDir = pathinfo(__DIR__);
 
 
@@ -94,6 +98,10 @@ $startDir = pathinfo(__DIR__);
             <button class="inputSubmit">Отправить</button>
         </fieldset>
     </form>
+</div>
+
+<div class="mainRef">
+    <a  href="index.php">Вернуться на главную</a>
 </div>
 
 </body>

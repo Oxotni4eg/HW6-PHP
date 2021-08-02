@@ -48,3 +48,19 @@
 .fileInfo {
     text-align: center;
 }
+
+.mainRef {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mainRef a {
+    text-decoration: none;
+    color: gray;
+    padding: 30px;
+}
+
+.mainRef a:hover {
+    color: black;
+}

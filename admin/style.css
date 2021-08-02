@@ -426,3 +426,17 @@ footer .footer-messangers li .a-pr {
 footer .footer-messangers li .a-gm {
     background-image: url(uploads/Google+.png);
 }
+
+.adminPanel {
+    text-align: right;
+    margin-top: 10px;
+}
+.adminPanel a {
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.adminPanel a:hover {
+    color: blue;
+}
+

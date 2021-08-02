@@ -1,4 +1,9 @@
 <?php
+
+if (!isset($_COOKIE['Autorization'])) {
+    header('Location: ./index.php');
+}
+
 session_start();
 
 $message = $_POST['message'];
@@ -9,5 +14,5 @@ $handle = fopen("./$workFile", 'w+');
 fwrite($handle,"$message");
 fclose($handle);
 
-header('Location: ./');
+header('Location: ./explorer.php');
 
