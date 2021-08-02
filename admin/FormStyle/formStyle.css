@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.AllForm {
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.AllInput {
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.AllForm form fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputSubmit {
+    padding: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.inputFiles {
+    text-align: center;
+}
+
+.returnFileManager {
+    color: black;
+    padding: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid black;
+}
+
+.fileInfo {
+    text-align: center;
+}
